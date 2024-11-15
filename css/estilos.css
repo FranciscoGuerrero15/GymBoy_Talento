@@ -300,8 +300,8 @@ p {
 }
 
 .tarjetaClientes {
-    width: 300px; /* Ajusta el ancho de las tarjetas, el -20px es para restar el espacio entre ellas */
-    border: 2px solid #040303; /* Puedes agregar un borde si lo deseas */
+    width: 300px; 
+    border: 2px solid #040303;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -345,7 +345,6 @@ p {
     object-fit: cover; /* Mantiene la relación de aspecto de la imagen sin distorsionarla */
 }
 /* Estilos del formulario de suscripción */
-/* Estilos para el contenedor del formulario */
 .subscribe-container {
     display: flex;
     flex-direction: column;
@@ -625,13 +624,13 @@ iframe {
         left: 160px;
     }
     .titulo-galeria {
-        color: #000000; /* Cambia el color a tu gusto */
+        color: #000000; 
         margin-top: 15%;
     }
     
     /* Cambiar el color solo de Imágenes Ilustrativas */
     .titulo-imagenes {
-        color: #000000; /* Cambia el color a tu gusto */
+        color: #000000; 
     }
     .form-contacto {
         max-width: 600px;
@@ -639,10 +638,10 @@ iframe {
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        margin-top: 800px; /* Ajusta el valor según lo que necesites */
+        margin-top: 800px; 
     }
     .mainContacto {
-        margin-top:0; /* Ajusta el valor según lo que necesites */
+        margin-top:0;
         h2{
             margin-top:16%;
         }
