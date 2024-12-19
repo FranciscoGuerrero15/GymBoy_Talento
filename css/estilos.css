@@ -39,16 +39,15 @@ id: #nombreId{propiedad:valor}
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
 /* Estilos generales */
-
 body {
     background-image: linear-gradient(to right top, #b19cd9, #b19cd9, #a7c7e7, #b0e0e6, #f8d7c1, #ffd1a3, #e2c8f7, #f5e0d0, #a3d8e4);
     font-family: 'Arial', sans-serif;
     background-color: #000000;
-    color: #000000; /* Color de texto oscuro */
+    color: #000000;
     margin: 0;
     width: 100%;
     padding: 0;
-    margin-top: -25px;
+    margin-top: 0;
     overflow-x: hidden;
 }
 
@@ -70,8 +69,8 @@ header {
 }
 
 .principalIndex {
-    position: absolute; /* Absoluto para cubrir toda la sección */
-    background-image: url(../assets/img/runner-7876675_1920.jpg); /* Imagen de fondo */
+    position: absolute; 
+    background-image: url(../assets/img/runner-7876675_1920.jpg); 
     top: 0;
     left: 0;
     right: 0;
@@ -140,7 +139,7 @@ header {
         transform: scale(1.1);
     }
     nav ul li a lord-icon {
-        vertical-align: middle; /* Asegura que el ícono esté alineado al centro verticalmente */
+        vertical-align: middle; 
     }
 
 /* Estilos principales */
@@ -151,7 +150,7 @@ main {
     width: 100%;
     border: none;
     box-shadow: none;
-    margin: 0 auto; /* Centrar el main */
+    margin: 0 auto; 
 }
 h1{
     color: #000000;
@@ -184,9 +183,9 @@ p {
 
 .galeriaDestacados {
     display: flex; 
-    justify-content: space-between; /* Asegura que haya espacio entre los elementos */
-    gap: 20px; /* Establece un espacio de 20px entre las tarjetas */
-    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .tarjetaDestacados {
@@ -194,19 +193,19 @@ p {
     padding: 20px;
     box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.375);
     border-radius: 10px;
-    width: calc(25% - 15px); /* Ajusta el tamaño de las tarjetas para que quepan 4 por fila */
+    width: calc(25% - 15px); 
     box-sizing: border-box;
-    text-align: center; /* Centra el contenido dentro de cada tarjeta */
+    text-align: center; 
 }
 
 .tarjetaDestacados img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
-    max-width: 200px; /* Limita el tamaño de la imagen */
-    margin-bottom: 10px; /* Agrega un pequeño espacio debajo de la imagen */
+    width: 100%; 
+    max-width: 200px; 
+    margin-bottom: 10px;
 }
 
 .tarjetaDestacados h3 h4 {
-    margin: 5px 0; /* Agrega margen entre el título y el precio */
+    margin: 5px 0; 
 }
 
 .tarjetaDestacados a {
@@ -221,8 +220,8 @@ p {
 }
 
 .tarjetaDestacados a:hover {
-    background-color: #f87c00; /* Color de fondo cuando se pasa el mouse */
-    color: #fff; /* Cambia el color del texto cuando se pasa el mouse */
+    background-color: #f87c00; 
+    color: #fff; 
 }
 .contenedorSectionDos{
     align-items:center;
@@ -232,7 +231,7 @@ p {
     }
 }
 .marcasqueVenden {
-    text-align: center; /* Centra el texto y el contenido dentro de la sección */
+    text-align: center; 
     margin: 0 auto;
     margin-top: 20px;
     border: 2px solid #010101;
@@ -244,7 +243,7 @@ p {
 }
 
 .boton {
-    display: inline-block; /* Asegura que el enlace sea tratable como un bloque */
+    display: inline-block; 
     margin-top: 5px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -258,15 +257,15 @@ p {
 }
 
 .boton:hover {
-    background-color: #FFD700; /* Hover color */
+    background-color: #FFD700;
 }
 .todasMarcas {
     display: flex;
     background-color: #5f5554;
-    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho de la pantalla */
-    justify-content: space-evenly; /* Espacio uniforme entre las marcas */
-    padding: 1%; /* Espaciado alrededor del contenedor */
-    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    width: 100%; 
+    justify-content: space-evenly; 
+    padding: 1%; 
+    box-sizing: border-box; 
 }
 
 .todasMarcas div {
@@ -274,16 +273,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 auto; /* Evita que las imágenes se compriman */
+    flex: 0 0 auto; 
     justify-content: space-evenly;
     height: 120px;
     box-sizing: border-box; 
 }
 
 .todasMarcas img {
-    width: 120px; /* Tamaño de las imágenes */
-    height: auto; /* Mantener la proporción de la imagen */
-    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+    width: 120px; 
+    height: auto; 
+    object-fit: contain;
 }
 /*opinion de los clientes*/
 .nuestrosClientes {
@@ -295,8 +294,8 @@ p {
     margin: 0 auto;
     width: 90%;
     display: flex;
-    gap: 10px; /* Espacio adicional entre las tarjetas */
-    flex-wrap: wrap; /* Para que las tarjetas se ajusten en múltiples filas si es necesario */
+    gap: 10px; 
+    flex-wrap: wrap; 
 }
 
 .tarjetaClientes {
@@ -311,17 +310,17 @@ p {
 
 .tarjetaClientes img {
     margin: 0 auto;
-    width: auto; /* Ajusta el tamaño de la imagen */
+    width: auto; 
     height: 100px;
     display: flex;
-    object-fit: cover; /* Para que las imágenes se ajusten correctamente */
+    object-fit: cover; 
     border-radius: 10px;
 }
 /* Estilos de la galería */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea un grid con columnas ajustables */
-    gap: 20px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; 
     padding: 20px;
 }
 
@@ -338,18 +337,18 @@ p {
 }
 
 .gallery img {
-    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible en su contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 100%; 
+    height: auto; 
     display: block;
-    border-radius: 10px; /* Bordes redondeados en las imágenes */
-    object-fit: cover; /* Mantiene la relación de aspecto de la imagen sin distorsionarla */
+    border-radius: 10px; 
+    object-fit: cover; 
 }
 /* Estilos del formulario de suscripción */
 .subscribe-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0; /* Elimina el espacio superior y lo acerca al borde del footer */
+    margin-top: 0; 
     flex-wrap: wrap;
 }
 
@@ -357,7 +356,7 @@ p {
 .subscribe-title {
     font-size: 0.8em;
     color: #000000;
-    margin-bottom: 5px; /* Ajusta el espacio entre el título y el campo de entrada */
+    margin-bottom: 5px; 
     flex-wrap: wrap;
 }
 
@@ -393,21 +392,24 @@ p {
 footer {
     background-color: #60575781;
     color: #000000;
-    padding: 20px 0 0 0; /* Sólo padding en la parte inferior */
+    padding: 15px 0 30px 0; 
     text-align: center;
     margin-top: 0;
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
+
 footer .porQueElegirnos {
-    background: linear-gradient(to right, #2a2a2a, #4c4c4c); /* Degradado oscuro */
+    background: linear-gradient(to right, #2a2a2a, #4c4c4c); 
     margin-top: -20px;
     color: #ffffff;
     padding: 1px;
 }
 
 footer .porQueElegirnos h2 {
-    color: #e4c40e; /* Amarillo brillante para el título */
+    color: #e4c40e; 
     text-align: center;
     margin-bottom: 10px;
 }
@@ -536,8 +538,7 @@ iframe {
 }
 
 /* Media queries para móviles */
-/* Media queries para móviles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     body {
         font-size: 14px;
         margin-top: 0;
@@ -547,15 +548,15 @@ iframe {
         padding: 10px;
         flex-direction: column;
         text-align: center;
-        background-color: #60575757; /* Fondo semitransparente en mobile */
-        backdrop-filter: blur(15px); /* Efecto de desenfoque */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Borde opcional */
+        background-color: #60575757; 
+        backdrop-filter: blur(15px); 
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
     header nav ul li a {
-        color: rgb(255, 255, 255); /* Color blanco para los enlaces en el nav */
+        color: rgb(255, 255, 255); 
     }
     header .logo-container h2 {
-        color: white; /* Color blanco para el texto y enlaces */
+        color: white;
     }
 
     .principalIndex {
@@ -570,9 +571,9 @@ iframe {
 
     .contenedorTextoPrincipalIndex {
         font-size: 1.5em;
-        border: 3px solid rgba(0, 0, 0, 0.5); /* Borde semitransparente */
-        border-radius: 15px; /* Bordes redondeados */
-        backdrop-filter: blur(20px); /* Efecto de desenfoque */
+        border: 3px solid rgba(0, 0, 0, 0.5); 
+        border-radius: 15px; 
+        backdrop-filter: blur(20px); 
         padding: 10px;
     }
     
@@ -587,7 +588,7 @@ iframe {
 
     .productosDestacados {
         margin-top: 700px;
-        width: calc(50% - 10px); /* Mostrar 2 tarjetas por fila */
+        width: calc(50% - 10px);
         }
     
 
@@ -597,7 +598,7 @@ iframe {
     }
 
     .tarjetaDestacados {
-        width: 100%; /* Ocupa toda la anchura en móviles */
+        width: 100%; 
         margin-bottom: 15px;
     }
 
@@ -608,8 +609,8 @@ iframe {
 
     .subscribe-container input[type="email"], 
     .subscribe-container button {
-        width: 100%; /* Ocupa el ancho completo en móviles */
-        max-width: 300px; /* Limita el ancho máximo */
+        width: 100%; 
+        max-width: 300px; 
     }
     
     .todasMarcas {
@@ -658,6 +659,18 @@ iframe {
             margin-top: 32%;
         }
     }
+    .weather-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .weather-temp {
+        font-size: 2rem;
+    }
 }
 
 
@@ -665,15 +678,15 @@ iframe {
 .subscribe-container {
     display:block;
     flex-direction: column;
-    align-items: right; /* Centra los elementos horizontalmente */
+    align-items: right; 
     margin-top: 20px;
 }
 
 /* Estilos para el título del formulario de suscripción */
 .subscribe-title {
-    font-size: 0.8em; /* Tamaño de la fuente */
-    color: #050f11; /* Color del texto */
-    margin-bottom: 10px; /* Espacio entre el título y el campo de correo */
+    font-size: 0.8em; 
+    color: #050f11; 
+    margin-bottom: 10px;
     text-align: center;
 
 }
@@ -681,19 +694,19 @@ iframe {
 /* Estilos para el formulario */
 .subscribe-container form {
     display: flex;
-    flex-direction: column; /* Coloca elementos en columna */
-    align-items: center; /* Centra el contenido */
+    flex-direction: column; 
+    align-items: center; 
 
 }
 
 /* Estilos para el campo de correo electrónico */
 .subscribe-container input[type="email"] {
     padding: 8px;
-    margin-bottom: 10px; /* Espacio entre el campo de correo y el botón */
+    margin-bottom: 10px; 
     border: none;
     border-radius: 3px;
     outline: none;
-    width: 250px; /* Limita el ancho del campo de correo */
+    width: 250px;
   
 }
 
@@ -702,7 +715,7 @@ iframe {
     padding: 8px 16px;
     border: none;
     background-color: #e57b09;
-    color: #fff9f9;
+    color: #fdfdfd;
     cursor: pointer;
     border-radius: 3px;
     transition: background-color 0.3s;
@@ -714,3 +727,235 @@ iframe {
     background-color: #000000;
 
 }
+
+
+/* Estilos generales para la sección de productos */
+.productos-page .product-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: flex-start; 
+    align-items: stretch; 
+}
+
+/* Estilo individual para cada producto */
+.productos-page .product-list .producto {
+    flex: 1 1 100%; /* Los productos ocupan el 100% de ancho en dispositivos pequeños */
+    max-width: 30%; /* Limita el ancho máximo al 30% del contenedor */
+    min-width: 250px; /* Ancho mínimo para evitar que se rompa */
+    background-color: #f4f4f4; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+/* Efecto hover para el producto */
+.productos-page .product-list .producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.productos-page .product-list .producto img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; /* La imagen se ajusta sin perder su relación de aspecto */
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0; 
+}
+
+/* Título y precio del producto */
+.productos-page .product-list .producto h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0; 
+    color: #333;
+}
+
+.productos-page .product-list .producto h4 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+/* Estilo para el botón de agregar producto */
+.productos-page .product-list .producto .btn-agregar {
+    display: inline-block;
+    background-color: #28a745; 
+    color: #fff; 
+    padding: 10px 15px; 
+    font-size: 14px; 
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto; 
+}
+
+/* Efecto hover para el botón */
+.productos-page .product-list .producto .btn-agregar:hover {
+    background-color: #218838; 
+    transform: translateY(-3px);
+}
+
+.productos-page .product-list .producto .btn-agregar:active {
+    background-color: #1c7430; 
+    transform: translateY(0);
+}
+
+
+
+/* Estilo específico para la página de carrito */
+.carrito-body {
+    background-image: linear-gradient(to right top, #b19cd9, #b19cd9, #a7c7e7, #b0e0e6, #f8d7c1, #ffd1a3, #e2c8f7, #f5e0d0, #a3d8e4);
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #000000; 
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-decoration: none;
+    margin-top: -25px;
+    overflow-x: hidden;
+}
+/* Estilo para la tabla del carrito */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table thead tr {
+    background-color: #4d4545;
+    color: #ffffff;
+    border: #4d4545;
+    text-align: left;
+    font-weight: bold
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #ffffff;
+}
+
+table tfoot tr {
+    background-color: #4d4545;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+
+table tfoot td {
+    padding: 10px 15px;
+}
+
+/* Estilo para el total del carrito */
+#totalCarrito {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+.weather-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.weather-container h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.weather-status {
+    font-size: 1.2rem;
+    color: #494040;
+    margin-bottom: 10px;
+}
+
+.weather-temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.weather-humidity {
+    font-size: 1.2rem;
+    color: #16a085;
+    margin-bottom: 20px;
+}
+
+.weather-container .error-message {
+    color: #e74c3c;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Botón de recarga del clima */
+.refresh-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+    background-color: #2980b9;
+}
+footer .subscribe-container {
+    margin-top: 0;
+    padding:0;
+    padding-top: 0;
+}
+.mainCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

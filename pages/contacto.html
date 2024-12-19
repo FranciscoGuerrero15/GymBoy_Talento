@@ -11,16 +11,21 @@
     </head>
 
     <body>
+        <!-- Barra de WhatsApp -->
         <div class="whatsapp-bar">
             <a href="https://web.whatsapp.com/" target="_blank" aria-label="WhatsApp">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
+        
+        <!-- Barra de Instagram -->
         <div class="instagram-bar">
             <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
+        
+        <!-- Encabezado -->
         <header>
             <a href="../index.html">
                 <img src="../assets/img/protein.webp" alt="logo de Talento Gym Boy, vaso de proteina" width="auto">
@@ -32,13 +37,9 @@
                     <li><a href="./galeria.html">Galeria</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                     <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./carrito.html"><lord-icon
-                        src="https://cdn.lordicon.com/ggirntso.json"
-                        trigger="hover"
-                        colors="primary:#30e8bd,secondary:#ffa500"
-                        style="width:30px;height:30px;">
-                    </lord-icon>
-                </a></li>
+                    <li><a href="./carrito.html">
+                        <lord-icon src="https://cdn.lordicon.com/ggirntso.json" trigger="hover" colors="primary:#30e8bd,secondary:#ffa500" style="width:30px;height:30px;"></lord-icon>
+                    </a></li>
                     <li><a href="../index.html#nosotros">Nosotros</a></li>
                     <li><a href="../index.html#¿por que elegirnos?">¿Por que elegirnos?</a></li>
                 </ul>
@@ -47,36 +48,49 @@
                 <h2>Gym Boy - Contacto</h2>
             </div>          
         </header>
+        
+        <!-- Formulario de contacto -->
         <main class="mainContacto">
             <h2 style="text-align: center;">Contacto</h2>
-            <form action="enviar_formulario.php" method="POST" style="max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 30px;">
-                <h3 style="text-align: center; color: #333;">Contacto</h3>
-            
+            <form id="contactForm" style="max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-top: 30px;">
+                <h3 style="text-align: center; color: #333;">Formulario de Contacto</h3>
+
+                <!-- Nombre -->
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="nombre" style="font-weight: bold;">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" minlength="2" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div id="errorNombre" style="color: red; display: none;">Por favor, ingresa tu nombre.</div>
                 </div>
-            
+
+                <!-- Apellido -->
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="apellido" style="font-weight: bold;">Apellido:</label>
                     <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu apellido" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div id="errorApellido" style="color: red; display: none;">Por favor, ingresa tu apellido.</div>
                 </div>
-            
+
+                <!-- DNI -->
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="dni" style="font-weight: bold;">DNI:</label>
                     <input type="text" id="dni" name="dni" required placeholder="Ingresa tu DNI" minlength="7" maxlength="8" pattern="\d+" title="El DNI debe ser un número de 7 a 8 dígitos." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div id="errorDNI" style="color: red; display: none;">Por favor, ingresa un DNI válido.</div>
                 </div>
-            
+
+                <!-- Teléfono -->
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="telefono" style="font-weight: bold;">Teléfono de contacto:</label>
                     <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa tu teléfono" pattern="\d{10,15}" title="El teléfono debe contener entre 10 y 15 dígitos." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div id="errorTelefono" style="color: red; display: none;">Por favor, ingresa un teléfono válido.</div>
                 </div>
-            
+
+                <!-- Correo Electrónico -->
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="email" style="font-weight: bold;">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required placeholder="Ingresa un correo electrónico válido" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" oninvalid="this.setCustomValidity('Por favor, incluye el signo @ en el correo')" oninput="this.setCustomValidity('')">
+                    <div id="errorEmail" style="color: red; display: none;">Por favor, ingresa un correo válido.</div>
                 </div>
-            
+
+                <!-- Tipo de Suplemento -->
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="tipo_suplemento" style="font-weight: bold;">Tipo de Suplemento:</label>
                     <select id="tipo_suplemento" name="tipo_suplemento" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
@@ -88,8 +102,8 @@
                         <option value="pre_entrenamiento">Pre-entrenamiento</option>
                         <option value="glutamina">Glutamina</option>
                     </select>
+                    <div id="errorSuplemento" style="color: red; display: none;">Por favor, selecciona un suplemento.</div>
                 </div>
-            
                 <div class="form-group" style="margin-bottom: 15px;">
                     <label for="provincia" style="font-weight: bold;">Provincia:</label>
                     <select id="provincia" name="provincia" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
@@ -119,12 +133,14 @@
                         <option value="23">Tucumán</option>
                     </select>
                 </div>
-            
+                
+                <!-- Mensaje -->
                 <div class="form-group" style="margin-bottom: 15px;">
-                    <label for="contrasena" style="font-weight: bold;">Contraseña:</label>
-                    <input type="password" id="contrasena" name="contrasena" required placeholder="Ingresa una contraseña (máx. 8 dígitos)" minlength="8" maxlength="8" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <label for="mensaje" style="font-weight: bold;">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; resize: vertical;"></textarea>
+                    <div id="errorMensaje" style="color: red; display: none;">Por favor, escribe tu mensaje.</div>
                 </div>
-            
+                
                 <div class="form-group" style="text-align: center;">
                     <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold;">
                         Enviar
@@ -135,43 +151,40 @@
                 </div>
             </form>
         </main>
+
+        <!-- Mensajes de error -->
+        <div id="form-message" style="text-align: center; color: green; margin-top: 20px;"></div>
+        <div id="form-error" style="text-align: center; color: red; margin-top: 20px;"></div>
+
         <footer>
             <nav>
-                <!-- Resto del contenido del footer -->
-            
                 <!-- Formulario de suscripción -->
-                 <h4 class="subscribe-title">NEWSLESTTER</h4>
+                <h4 class="subscribe-title">NEWSLESTTER</h4>
                 <div class="subscribe-container">
                     <form action="#" method="post">
                         <input type="email" name="email" placeholder="Tu correo electrónico" required>
                         <button type="submit">Suscribirse</button>
                     </form>
                 </div>
-            
-                <!-- Resto del contenido del footer -->
-        </nav>
-            <a href="../index.html">
-                <img src="../assets/img/protein.webp" alt="logo de Talento Gym Boy, vaso de proteina" width="auto">
+                <a href="../index.html">
+                    <img src="../assets/img/protein.webp" alt="logo de Talento Gym Boy" width="auto">
+                </a>
                 <lord-icon src="https://cdn.lordicon.com/olgkcryw.json" trigger="hover" stroke="bold" colors="primary:#000000,secondary:#e88c30,tertiary:#f9c9c0,quaternary:#30e8bd,quinary:#911051,senary:#000000" style="width:90px;height:90px; margin-left: auto;"></lord-icon>
-            </a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.383284379241!2d-58.39603971092223!3d-34.69551139252072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccde8f6fe367%3A0x383f68a37ec1108e!2sAv.%20Hip%C3%B3lito%20Yrigoyen%203485%2C%20B1824%20ABA%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1727933874263!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.383284379241!2d-58.39603971092223!3d-34.69551139252072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccde8f6fe367%3A0x383f68a37ec1108e!2sAv.%20Hip%C3%B3lito%20Yrigoyen%203485%2C%20B1824%20ABA%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1727933874263!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </nav>
+            <address>
+                <p>Dirección: Av. Hipólito Yrigoyen 3485, Lanus, Buenos Aires, CP B1826</p>
+                <p>Teléfono de Contacto: (+54 9 11-0000-0000)</p>
+                <p>Correo de Contacto: contactosGymBoy@talento.com</p>
+                <p>© 2021 Todos los derechos reservados. Gym Boy - Talento. Sin autorización previa, queda prohibida la reproducción total o parcial de este contenido.</p>
+            </address>
             <div>
-                <address>
-                    <p>Dirección: Av. Hipólito Yrigoyen 3485, Lanus, Buenos Aires, CP B1826</p>
-                    <p>Teléfono de Contacto: (+54 9 11-0000-0000)</p>
-                    <p>Correo de Contacto: contactosGymBoy@talento.com</p>
-                    <p>© 2021 Todos los derechos reservados. Gym Boy - Talento. Sin autorización previa, queda prohibida la reproducción total o parcial de este contenido.</p>
-                </address>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://x.com/home?lang=es"><i class="fab fa-twitter"></i>
-                </a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/home?lang=es"><i class="fab fa-twitter"></i></a>
             </div>
         </footer>
-
-            
         
+        <script src="../js/validacion.js"></script> <!-- Vincula el archivo de validación al final -->
     </body>
 </html>
+
